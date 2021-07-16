@@ -1,4 +1,4 @@
-class DFS:
+class DFA:
     def __init__(self, K, sigma, delta, S, F):
         self.K = K #states (set)
         self.sigma = sigma #alphabet (set)
@@ -76,8 +76,8 @@ delta = {("q0","a","q0"), ("q0","b","q1"), ("q1","a","q0"), ("q1","b","q2"), ("q
 S = "q0"
 F = {"q0", "q1", "q3"}
 
-sample1 = DFS({"q1", "q2"}, {"a", "b"}, {("q1","a","q2"), ("q1","b","q2"), ("q2","a","q2"), ("q2","b","q2")}, "q1", {"q2"})
-sample2 = DFS(K, sigma, delta, S, F)
+sample1 = DFA({"q1", "q2"}, {"a", "b"}, {("q1","a","q2"), ("q1","b","q2"), ("q2","a","q2"), ("q2","b","q2")}, "q1", {"q2"})
+sample2 = DFA(K, sigma, delta, S, F)
 
 print(sample1)
 
