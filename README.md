@@ -7,3 +7,6 @@ NFA -> DFA
 Regular Expression -> NFA  
 Push-Down Automota  
 Turing Machine  
+
+
+
