@@ -5,13 +5,8 @@ class DFA:
         self.delta = delta #transition function {set of (K, sigma -> K)}
         self.S = S #start state
         self.F = F #final states
-
+        
         self.current = S
-
-        if(S in F):
-            self.is_final = True
-        else:
-            self.is_final = False
 
     def __str__(self):
         return f"K = {self.K} \nsigma = {self.sigma} \ndelta = {self.delta} \nS = {self.S} \nF = {self.F} "
