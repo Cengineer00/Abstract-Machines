@@ -5,7 +5,7 @@ class DFA:
         self.delta = delta #transition function {set of (K, sigma -> K)}
         self.S = S #start state
         self.F = F #final states
-        
+
         self.current = S
 
     def __str__(self):
@@ -20,7 +20,7 @@ class DFA:
         for i in self.K:
             if i not in self.F:
                 F.add(i)
-        return DFS(K, sigma, delta, S, F)
+        return DFA(K, sigma, delta, S, F)
 
     def transition(self, letter): #TODO dont forget to remove letter from the string
         for i in self.delta:
