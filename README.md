@@ -1,6 +1,6 @@
 # Abstract-Machines
 DFA, NFA, PDA, TM
-# TODO 
+## TODO 
 - [x] Deterministic Finite Automota  
 - [x] Non-Deterministic Finite Automota  
 - [ ] NFA -> DFA  
